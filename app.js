@@ -1,17 +1,22 @@
+
+//declara variaveis
 let listaNumerosSorteados = [];
 let numeroLimite = 10;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
+
 //mostrar o número que foi gerado
 console.log(numeroSecreto);
 
 exibirMensagemIncial();
 
+//usa uma taga html para receber um texto
 function exibirTextoNaTela(tag, texto) {
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
 }
 
+//execução da function
 function exibirMensagemIncial() {
     exibirTextoNaTela('h1', 'Secret Number Game');
     exibirTextoNaTela('p', 'Escolha um nímero entre 1 e 10');
